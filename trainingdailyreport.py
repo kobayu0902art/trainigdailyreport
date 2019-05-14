@@ -59,7 +59,7 @@ wb.save('研修日報週報.xlsx')
 # In[45]:
 
 
-#対象期間　(罫線ひけてない、日付の形にできてない)
+#対象期間　
 ws.merge_cells("B5:C5")
 
 
@@ -110,7 +110,7 @@ wb.save('研修日報週報.xlsx')
 # In[46]:
 
 
-#所属　(罫線)
+#所属　
 ws.merge_cells("B6:C6")
 ws.merge_cells("D6:K6")
 
@@ -143,7 +143,7 @@ wb.save('研修日報週報.xlsx')
 # In[47]:
 
 
-#氏名　(罫線)
+#氏名　
 ws.merge_cells("B7:C7")
 ws.merge_cells("D7:K7")
 
@@ -285,8 +285,6 @@ wb.save("研修日報週報.xlsx")
 
 # In[51]:
 
-
-#日付は合わせた後にやる
 from openpyxl.styles.alignment import Alignment
 for row in ws:
     for cell in row:
@@ -410,25 +408,6 @@ ws["B15"].border = border
 wb.save("研修日報週報.xlsx")
 
 
-# In[62]:
-
-
-wb = px.load_workbook('研修日報週報 - コピー.xlsx')
-
-
-# In[36]:
-
-
-
-
-
-# In[33]:
-
-
-
-
-
-# In[ ]:
 
 
 
