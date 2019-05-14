@@ -21,7 +21,7 @@ ws.title="Sheet1"
 # In[42]:
 
 
-#セルの高さを20.1に変更 (できてない)
+#セルの高さを20.1に変更 
 for i in range(100):
     ws.row_dimensions[i].height=20.1
 wb.save('研修日報週報.xlsx')
@@ -30,7 +30,7 @@ wb.save('研修日報週報.xlsx')
 # In[43]:
 
 
-#セルの幅を3.94に変更　(できてない)
+#セルの幅を3.94に変更　
 for c in range(ord('A'),ord('Z')+1):
     ws.column_dimensions[chr(c)].width = 3.94
 wb.save('研修日報週報.xlsx')
