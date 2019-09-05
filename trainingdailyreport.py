@@ -131,7 +131,8 @@ ws["D6"].font = Font(
     name = '游ゴシック',
     size = 11
 )
-ws["D6"] = "アンドロボティクス株式会社"
+#漏洩対策:sampleに置換
+ws["D6"] = "sample"
 ws["D6"].alignment = Alignment(
     vertical = 'center',
     horizontal = 'center'
